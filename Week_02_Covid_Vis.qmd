@@ -1,7 +1,7 @@
 ---
 title: "Week 02: COVID Visualization Activity"
 date: "September, 11 2023"
-author: "**`[[`**Your Name**`]]`**"
+author: "**`[[`**Leqi Wang**`]]`**"
 ---
 
 Today, we'll be working with a data set related to COVID.
@@ -36,6 +36,18 @@ covid_data_count |>
 ```
 
 1. Write code for a plot and describe what you observe?
+
+ggplot(covid_data_count, aes(x=date, y=Deaths, color=race))+ geom_smooth(alpha=0.5)
+
+I observed that death counts increases are date increase.
+
 2. Are there any conclusions you can draw?
+
+White people has the highest death count and Latino popele has second highest death count. This curve shows approximately an exponential growth rate. 
+
 3. What were you not able to do due to not having the R knowledge?
+
+I am not able to include more dependent variables in the plot.  
+
 4. What other data would be useful to better understand this data?
+Data on income level and Age would be helpful.
